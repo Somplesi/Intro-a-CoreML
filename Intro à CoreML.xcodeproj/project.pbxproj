@@ -12,6 +12,11 @@
 		080E78E72112F7BC002849E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080E78E52112F7BC002849E1 /* LaunchScreen.storyboard */; };
 		080E78EF2112F895002849E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080E78EE2112F895002849E1 /* Main.storyboard */; };
 		080E78F12112FAB5002849E1 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E78F02112FAB5002849E1 /* CameraController.swift */; };
+		A21BD5E0252F9D03006EEED7 /* CoreMLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21BD5DF252F9D03006EEED7 /* CoreMLController.swift */; };
+		A2B386F62530268600F78DAA /* AgeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A2B386F52530268600F78DAA /* AgeNet.mlmodel */; };
+		A2B386F92530269500F78DAA /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A2B386F82530269500F78DAA /* MobileNet.mlmodel */; };
+		A2B386FC253026A100F78DAA /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A2B386FB253026A100F78DAA /* MobileNetV2.mlmodel */; };
+		A2C1E8F125304B1700C27060 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C1E8F025304B1700C27060 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		080E78E82112F7BC002849E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		080E78EE2112F895002849E1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		080E78F02112FAB5002849E1 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		A21BD5DF252F9D03006EEED7 /* CoreMLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLController.swift; sourceTree = "<group>"; };
+		A2B386F52530268600F78DAA /* AgeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeNet.mlmodel; sourceTree = "<group>"; };
+		A2B386F82530269500F78DAA /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		A2B386FB253026A100F78DAA /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		A2C1E8F025304B1700C27060 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,43 @@
 		080E78DB2112F7BB002849E1 /* Intro à CoreML */ = {
 			isa = PBXGroup;
 			children = (
+				A21BD5E2252F9D62006EEED7 /* Model */,
+				A21BD5E3252F9D6B006EEED7 /* View */,
+				A21BD5E4252F9D83006EEED7 /* Controller */,
 				080E78DC2112F7BB002849E1 /* AppDelegate.swift */,
 				080E78E32112F7BC002849E1 /* Assets.xcassets */,
 				080E78E52112F7BC002849E1 /* LaunchScreen.storyboard */,
 				080E78EE2112F895002849E1 /* Main.storyboard */,
 				080E78E82112F7BC002849E1 /* Info.plist */,
-				080E78F02112FAB5002849E1 /* CameraController.swift */,
 			);
 			path = "Intro à CoreML";
+			sourceTree = "<group>";
+		};
+		A21BD5E2252F9D62006EEED7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2B386F52530268600F78DAA /* AgeNet.mlmodel */,
+				A2B386F82530269500F78DAA /* MobileNet.mlmodel */,
+				A2B386FB253026A100F78DAA /* MobileNetV2.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A21BD5E3252F9D6B006EEED7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2C1E8F025304B1700C27060 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A21BD5E4252F9D83006EEED7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				080E78F02112FAB5002849E1 /* CameraController.swift */,
+				A21BD5DF252F9D03006EEED7 /* CoreMLController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B386FC253026A100F78DAA /* MobileNetV2.mlmodel in Sources */,
 				080E78F12112FAB5002849E1 /* CameraController.swift in Sources */,
+				A2B386F92530269500F78DAA /* MobileNet.mlmodel in Sources */,
 				080E78DD2112F7BB002849E1 /* AppDelegate.swift in Sources */,
+				A2B386F62530268600F78DAA /* AgeNet.mlmodel in Sources */,
+				A2C1E8F125304B1700C27060 /* TableViewCell.swift in Sources */,
+				A21BD5E0252F9D03006EEED7 /* CoreMLController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
